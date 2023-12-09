@@ -1,0 +1,565 @@
+﻿name,communityId
+"""Not an EPA Food Commodity""",0
+"""Beet, garden, roots""",1
+"""Beet, garden, roots-babyfood""",2
+"""Beet, sugar, molasses-babyfood""",6
+"""Burdock""",7
+"""Carrot-babyfood""",9
+"""Carrot, juice""",10
+"""Celeriac""",11
+"""Chicory, roots""",12
+"""Ginseng, dried""",13
+"""Horseradish""",14
+"""Parsley, turnip rooted""",15
+"""Parsnip""",16
+"""Parsnip-babyfood""",17
+"""Radish, roots""",18
+"""Radish, Oriental, roots""",19
+"""Rutabaga""",20
+"""Salsify, roots""",21
+"""Turnip, roots""",22
+"""Arrowroot, flour""",23
+"""Arrowroot, flour-babyfood""",24
+"""Artichoke, Jerusalem""",25
+"""Dasheen, corm""",28
+"""Ginger""",29
+"""Ginger-babyfood""",30
+"""Potato, chips""",32
+"""Potato, dry (granules/ flakes)""",33
+"""Potato, dry (granules/ flakes)-babyfood""",34
+"""Potato, tuber, w/peel""",37
+"""Potato, tuber, w/peel-babyfood""",38
+"""Potato, tuber, w/o peel""",39
+"""Potato, tuber, w/o peel-babyfood""",40
+"""Sweet potato""",41
+"""Sweet potato-babyfood""",42
+"""Tanier, corm""",43
+"""Yam, true""",45
+"""Yam bean""",46
+"""Beet, garden, tops""",47
+"""Chicory, tops""",48
+"""Dasheen, leaves""",49
+"""Radish, Oriental, tops""",50
+"""Salsify, tops""",51
+"""Garlic, bulb""",52
+"""Garlic, bulb-babyfood""",53
+"""Onion, bulb""",54
+"""Onion, bulb-babyfood""",55
+"""Onion, bulb, dried-babyfood""",57
+"""Shallot, bulb""",58
+"""Leek""",60
+"""Onion, green""",61
+"""Shallot, fresh leaves""",62
+"""Amaranth, leafy""",63
+"""Chrysanthemum, garland""",64
+"""Cilantro, leaves""",65
+"""Cilantro, leaves-babyfood""",66
+"""Dandelion, leaves""",67
+"""Dillweed""",68
+"""Endive""",69
+"""Lettuce, head""",70
+"""Lettuce, leaf""",71
+"""Parsley, leaves""",72
+"""Radicchio""",73
+"""Spinach-babyfood""",75
+"""Swiss chard""",76
+"""Arugula""",77
+"""Broccoli, Chinese""",78
+"""Broccoli raab""",79
+"""Cabbage, Chinese, bok choy""",80
+"""Collards""",81
+"""Cress, garden""",82
+"""Cress, upland""",83
+"""Kale""",84
+"""Mustard greens""",85
+"""Radish, tops""",86
+"""Rape greens""",87
+"""Turnip, greens""",88
+"""Watercress""",89
+"""Broccoli""",90
+"""Broccoli-babyfood""",91
+"""Brussels sprouts""",92
+"""Cabbage""",93
+"""Cabbage, Chinese, napa""",94
+"""Cabbage, Chinese, mustard""",95
+"""Cauliflower""",96
+"""Soybean, seed""",97
+"""Soybean, soy milk-babyfood or infant formula""",101
+"""Bean, snap, succulent-babyfood""",105
+"""Pea, edible podded, succulent""",106
+"""Soybean, vegetable""",107
+"""Bean, broad, succulent""",108
+"""Bean, cowpea, succulent""",109
+"""Bean, lima, succulent""",110
+"""Pea, succulent""",111
+"""Pea, succulent-babyfood""",112
+"""Pea, pigeon, succulent""",113
+"""Bean, black, seed""",114
+"""Bean, broad, seed""",115
+"""Bean, cowpea, seed""",116
+"""Bean,  great northern, seed""",117
+"""Bean, kidney, seed""",118
+"""Bean, lima, seed""",119
+"""Bean, mung, seed""",120
+"""Bean, navy, seed""",121
+"""Bean, pink, seed""",122
+"""Bean, pinto, seed""",123
+"""Chickpea, seed""",124
+"""Chickpea, seed-babyfood""",125
+"""Chickpea, flour""",126
+"""Guar, seed-babyfood""",128
+"""Lentil, seed""",129
+"""Pea, dry""",130
+"""Pea, dry-babyfood""",131
+"""Pea, pigeon, seed""",132
+"""Goji berry""",133
+"""Tomatillo""",134
+"""Tomato""",135
+"""Tomato-babyfood""",136
+"""Tomato, paste""",137
+"""Tomato, paste-babyfood""",138
+"""Tomato, puree""",139
+"""Tomato, puree-babyfood""",140
+"""Tomato, dried""",141
+"""Tomato, dried-babyfood""",142
+"""Tomato, juice""",143
+"""Tree Tomato""",144
+"""Eggplant""",145
+"""Okra""",146
+"""Pepper, bell""",147
+"""Pepper, bell-babyfood""",148
+"""Pepper, bell, dried-babyfood""",150
+"""Pepper, nonbell""",151
+"""Pepper, nonbell-babyfood""",152
+"""Cantaloupe""",154
+"""Honeydew melon""",155
+"""Watermelon""",156
+"""Watermelon, juice""",157
+"""Balsam pear""",158
+"""Chayote, fruit""",159
+"""Chinese waxgourd""",160
+"""Cucumber""",161
+"""Pumpkin, seed""",163
+"""Squash, summer""",164
+"""Squash, summer-babyfood""",165
+"""Squash, winter""",166
+"""Squash, winter-babyfood""",167
+"""Citron""",168
+"""Citrus hybrids""",169
+"""Citrus, oil""",170
+"""Orange""",171
+"""Orange, juice-babyfood""",173
+"""Orange, peel""",174
+"""Tangerine""",175
+"""Kumquat""",177
+"""Lemon, juice-babyfood""",180
+"""Lemon, peel""",181
+"""Lime""",182
+"""Lime, juice-babyfood""",184
+"""Grapefruit""",185
+"""Pummelo""",187
+"""Apple, fruit with peel""",188
+"""Apple, peeled fruit-babyfood""",190
+"""Apple, dried""",191
+"""Apple, dried-babyfood""",192
+"""Apple, juice-babyfood""",194
+"""Apple, sauce""",195
+"""Apple, sauce-babyfood""",196
+"""Crabapple""",197
+"""Loquat""",198
+"""Pear""",199
+"""Pear-babyfood""",200
+"""Pear, dried""",201
+"""Pear, juice-babyfood""",203
+"""Quince""",204
+"""Cherry-babyfood""",206
+"""Cherry, juice-babyfood""",208
+"""Apricot""",209
+"""Apricot-babyfood""",210
+"""Apricot, dried""",211
+"""Apricot, juice-babyfood""",213
+"""Nectarine""",214
+"""Peach-babyfood""",216
+"""Peach, dried""",217
+"""Peach, dried-babyfood""",218
+"""Peach, juice""",219
+"""Peach, juice-babyfood""",220
+"""Plum""",221
+"""Plum-babyfood""",222
+"""Plum, prune, fresh""",223
+"""Plum, prune, fresh-babyfood""",224
+"""Plum, prune, dried""",225
+"""Plum, prune, dried-babyfood""",226
+"""Plum, prune, juice""",227
+"""Plum, prune, juice-babyfood""",228
+"""Blackberry, juice""",230
+"""Blackberry, juice-babyfood""",231
+"""Loganberry""",233
+"""Raspberry-babyfood""",235
+"""Raspberry, juice-babyfood""",237
+"""Blueberry-babyfood""",239
+"""Currant""",240
+"""Currant, dried""",241
+"""Elderberry""",242
+"""Gooseberry""",243
+"""Huckleberry""",244
+"""Mulberry""",245
+"""Grape""",246
+"""Grape, juice-babyfood""",248
+"""Grape, wine and sherry""",250
+"""Kiwifruit, fuzzy""",251
+"""Cranberry""",252
+"""Cranberry-babyfood""",253
+"""Cranberry, dried""",254
+"""Cranberry, juice-babyfood""",256
+"""Strawberry-babyfood""",258
+"""Strawberry, juice-babyfood""",260
+"""Almond-babyfood""",262
+"""Almond, oil""",263
+"""Almond, oil-babyfood""",264
+"""Brazil nut""",265
+"""Butternut""",266
+"""Chestnut""",268
+"""Coconut, meat""",269
+"""Coconut, meat-babyfood""",270
+"""Hazelnut, oil""",276
+"""Hickory nut""",277
+"""Macadamia nut""",278
+"""Pine nut""",280
+"""Walnut""",282
+"""Barley, pearled barley""",283
+"""Barley, pearled barley-babyfood""",284
+"""Barley, flour-babyfood""",286
+"""Barley, bran""",287
+"""Buckwheat""",288
+"""Buckwheat, flour""",289
+"""Corn, field, flour-babyfood""",291
+"""Corn, field, meal-babyfood""",293
+"""Corn, pop""",301
+"""Corn, sweet-babyfood""",303
+"""Millet, grain""",304
+"""Oat, flour""",306
+"""Oat, flour-babyfood""",307
+"""Oat, groats/rolled oats""",308
+"""Rice, white-babyfood""",311
+"""Almond""",312
+"""Coconut, milk""",312
+"""Pistachio""",312
+"""Barley, flour""",312
+"""Corn, field, meal""",312
+"""Corn, field, oil""",312
+"""Rice, brown""",312
+"""Wheat, grain""",312
+"""Cinnamon""",312
+"""Rapeseed, oil""",312
+"""Safflower, oil""",312
+"""Sunflower, oil""",312
+"""Cottonseed, oil""",312
+"""Beet, sugar""",312
+"""Ginger, dried""",312
+"""Soybean, soy milk""",312
+"""Pineapple""",312
+"""Pork, fat""",312
+"""Egg, whole""",312
+"""Cocoa bean, chocolate""",312
+"""Honey""",312
+"""Seaweed""",312
+"""Sugarcane, sugar""",312
+"""Pumpkin""",312
+"""Apple, peeled fruit""",312
+"""Grape, raisin""",312
+"""Rice, brown-babyfood""",313
+"""Coconut, oil-babyfood""",315
+"""Corn, field, starch-babyfood""",315
+"""Corn, field, syrup-babyfood""",315
+"""Corn, field, oil-babyfood""",315
+"""Rice, flour-babyfood""",315
+"""Wheat, flour-babyfood""",315
+"""Safflower, oil-babyfood""",315
+"""Sunflower, oil-babyfood""",315
+"""Milk, nonfat solids-baby food/infant formula""",315
+"""Milk, sugar (lactose)-baby food/infant formula""",315
+"""Beet, sugar-babyfood""",315
+"""Cassava-babyfood""",315
+"""Potato, flour-babyfood""",315
+"""Soybean, flour-babyfood""",315
+"""Soybean, oil-babyfood""",315
+"""Water, indirect, all sources""",315
+"""Palm, oil-babyfood""",315
+"""Seaweed-babyfood""",315
+"""Sugarcane, sugar-babyfood""",315
+"""Cocoa bean, powder""",316
+"""Palm, oil""",316
+"""Peanut""",316
+"""Peanut, butter""",316
+"""Peanut, oil""",316
+"""Peppermint""",316
+"""Sugarcane, molasses""",316
+"""Vinegar""",316
+"""Water chestnut""",316
+"""Beef, fat""",316
+"""Milk, fat""",316
+"""Milk, nonfat solids""",316
+"""Milk, water""",316
+"""Egg, white""",316
+"""Pepper, bell, dried""",316
+"""Pepper, nonbell, dried""",316
+"""Coconut, dried""",316
+"""Coconut, oil""",316
+"""Corn, field, flour""",316
+"""Corn, field, bran""",316
+"""Corn, field, starch""",316
+"""Corn, field, syrup""",316
+"""Corn, sweet""",316
+"""Oat, bran""",316
+"""Rice, white""",316
+"""Rice, flour""",316
+"""Rice, bran""",316
+"""Wheat, flour""",316
+"""Wheat, bran""",316
+"""Parsley, dried leaves""",316
+"""Celery""",316
+"""Beet, sugar, molasses""",316
+"""Carrot""",316
+"""Cassava""",316
+"""Potato, flour""",316
+"""Turmeric""",316
+"""Onion, bulb, dried""",316
+"""Chive, fresh leaves""",316
+"""Spinach""",316
+"""Soybean, flour""",316
+"""Soybean, oil""",316
+"""Bean, snap, succulent""",316
+"""Guar, seed""",316
+"""Rice, bran-babyfood""",317
+"""Rye, grain""",318
+"""Rye, flour""",319
+"""Sorghum, grain""",320
+"""Sorghum, syrup""",321
+"""Triticale, flour""",322
+"""Triticale, flour-babyfood""",323
+"""Wheat, grain-babyfood""",325
+"""Wheat, germ""",328
+"""Wild rice""",330
+"""Alfalfa, seed""",331
+"""Basil, fresh leaves""",332
+"""Basil, fresh leaves-babyfood""",333
+"""Basil, dried leaves""",334
+"""Basil, dried leaves-babyfood""",335
+"""Chive, dried leaves""",336
+"""Herbs, other""",337
+"""Herbs, other-babyfood""",338
+"""Lemongrass""",339
+"""Marjoram""",340
+"""Marjoram-babyfood""",341
+"""Parsley, dried leaves-babyfood""",343
+"""Savory""",344
+"""Cinnamon-babyfood""",346
+"""Coriander, seed""",347
+"""Coriander, seed-babyfood""",348
+"""Dill, seed""",349
+"""Pepper, black and white""",350
+"""Pepper, black and white-babyfood""",351
+"""Spices, other-babyfood""",353
+"""Flax, seed""",354
+"""Flax seed, oil""",355
+"""Rapeseed, oil-babyfood""",357
+"""Sesame, seed""",358
+"""Sesame, seed-babyfood""",359
+"""Sesame, oil""",360
+"""Sesame, oil-babyfood""",361
+"""Sunflower, seed""",364
+"""Cottonseed, oil-babyfood""",368
+"""Mushroom""",369
+"""Agave""",370
+"""Asparagus""",371
+"""Bamboo, shoots""",372
+"""Cactus""",373
+"""Celtuce""",374
+"""Fennel, Florence""",375
+"""Kohlrabi""",376
+"""Palm heart, leaves""",377
+"""Cardoon""",378
+"""Celery-babyfood""",380
+"""Celery, juice""",381
+"""Rhubarb""",382
+"""Acerola""",383
+"""Olive""",384
+"""Olive, oil""",385
+"""Carob""",386
+"""Fig""",387
+"""Fig, dried""",388
+"""Guava""",389
+"""Guava-babyfood""",390
+"""Starfruit""",391
+"""Tamarind""",392
+"""Acai berry""",393
+"""Date""",394
+"""Feijoa""",395
+"""Atemoya""",396
+"""Canistel""",397
+"""Lychee""",398
+"""Lychee, dried""",399
+"""Spanish lime""",400
+"""Avocado""",401
+"""Banana-babyfood""",403
+"""Banana, dried""",404
+"""Banana, dried-babyfood""",405
+"""Mango""",406
+"""Mango-babyfood""",407
+"""Mango, dried""",408
+"""Mango, juice-babyfood""",410
+"""Papaya""",411
+"""Papaya-babyfood""",412
+"""Papaya, dried""",413
+"""Papaya, juice""",414
+"""Pawpaw""",415
+"""Persimmon""",416
+"""Plantain""",417
+"""Plantain, dried""",418
+"""Pomegranate""",419
+"""Pomegranate, juice""",420
+"""Breadfruit""",421
+"""Cherimoya""",422
+"""Jackfruit""",423
+"""Longan""",424
+"""Mamey apple""",425
+"""Pineapple-babyfood""",427
+"""Pineapple, dried""",428
+"""Pineapple, juice-babyfood""",430
+"""Sapote, Mamey""",431
+"""Soursop""",432
+"""Sugar apple""",433
+"""Dragon fruit""",434
+"""Prickly pear fruit""",435
+"""Passionfruit""",436
+"""Passionfruit-babyfood""",437
+"""Passionfruit, juice-babyfood""",439
+"""Beef, meat""",440
+"""Beef, meat-babyfood""",441
+"""Beef, meat, dried""",442
+"""Beef, meat byproducts-babyfood""",444
+"""Beef, fat-babyfood""",446
+"""Beef, kidney""",447
+"""Beef, liver""",448
+"""Beef, liver-babyfood""",449
+"""Goat, meat""",450
+"""Goat, meat byproducts""",451
+"""Goat, fat""",452
+"""Goat, kidney""",453
+"""Goat, liver""",454
+"""Horse, meat""",455
+"""Pork, meat""",456
+"""Pork, meat-babyfood""",457
+"""Pork, skin""",458
+"""Pork, meat byproducts-babyfood""",460
+"""Pork, fat-babyfood""",462
+"""Pork, kidney""",463
+"""Pork, liver""",464
+"""Sheep, meat""",465
+"""Sheep, meat-babyfood""",466
+"""Sheep, meat byproducts""",467
+"""Sheep, fat""",468
+"""Sheep, fat-babyfood""",469
+"""Sheep, kidney""",470
+"""Sheep, liver""",471
+"""Milk, fat-baby food/infant formula""",473
+"""Milk, water-babyfood/infant formula""",477
+"""Milk, human""",479
+"""Meat, game""",480
+"""Rabbit, meat""",481
+"""Chicken, meat""",482
+"""Chicken, meat-babyfood""",483
+"""Chicken, liver""",484
+"""Chicken, meat byproducts""",485
+"""Chicken, meat byproducts-babyfood""",486
+"""Chicken, fat""",487
+"""Chicken, fat-babyfood""",488
+"""Chicken, skin""",489
+"""Chicken, skin-babyfood""",490
+"""Turkey, meat""",491
+"""Turkey, meat-babyfood""",492
+"""Turkey, liver""",493
+"""Turkey, liver-babyfood""",494
+"""Turkey, meat byproducts""",495
+"""Turkey, meat byproducts-babyfood""",496
+"""Turkey, fat""",497
+"""Turkey, fat-babyfood""",498
+"""Turkey, skin""",499
+"""Turkey, skin-babyfood""",500
+"""Poultry, other, meat""",501
+"""Poultry, other, liver""",502
+"""Poultry, other, meat byproducts""",503
+"""Poultry, other, fat""",504
+"""Poultry, other, skin""",505
+"""Egg, whole-babyfood""",507
+"""Egg, white (solids)-babyfood""",509
+"""Egg, yolk-babyfood""",511
+"""Fish-freshwater finfish""",512
+"""Fish-freshwater finfish, farm raised""",513
+"""Fish-saltwater finfish, tuna""",514
+"""Fish-saltwater finfish, other""",515
+"""Fish-shellfish, crustacean""",516
+"""Fish-shellfish, mollusc""",517
+"""Water, direct, all sources""",518
+"""Water, direct, tap""",519
+"""Water, direct, bottled""",520
+"""Water, direct, other""",521
+"""Water, direct, source-NS""",522
+"""Water, indirect, tap""",524
+"""Water, indirect, bottled""",525
+"""Water, indirect, other""",526
+"""Water, indirect, source-NS""",527
+"""Amaranth, grain""",528
+"""Artichoke, globe""",529
+"""Belgium endive""",530
+"""Grape, leaves""",535
+"""Honey-babyfood""",537
+"""Bee pollen""",538
+"""Hop""",539
+"""Coffee, roasted bean""",540
+"""Coffee, instant""",540
+"""Maple, sugar""",540
+"""Banana""",540
+"""Mango, juice""",540
+"""Pineapple, juice""",540
+"""Passionfruit, juice""",540
+"""Beef, meat byproducts""",540
+"""Pork, meat byproducts""",540
+"""Egg, yolk""",540
+"""Strawberry""",540
+"""Strawberry, juice""",540
+"""Cashew""",540
+"""Hazelnut""",540
+"""Pecan""",540
+"""Oat, groats/rolled oats-babyfood""",540
+"""Spices, other""",540
+"""Orange, juice""",540
+"""Tangerine, juice""",540
+"""Lemon""",540
+"""Lemon, juice""",540
+"""Lime, juice""",540
+"""Grapefruit, juice""",540
+"""Apple, juice""",540
+"""Pear, juice""",540
+"""Cherry""",540
+"""Cherry, juice""",540
+"""Apricot, juice""",540
+"""Peach""",540
+"""Blackberry""",540
+"""Boysenberry""",540
+"""Raspberry""",540
+"""Raspberry, juice""",540
+"""Blueberry""",540
+"""Grape, juice""",540
+"""Cranberry, juice""",540
+"""Maple syrup""",541
+"""Peppermint, oil""",548
+"""Psyllium, seed""",549
+"""Quinoa, grain""",550
+"""Spearmint""",553
+"""Spearmint, oil""",554
+"""Sugarcane, molasses-babyfood""",558
+"""Tea, dried""",559
+"""Tea, instant""",560
+"""Teff, flour""",561
