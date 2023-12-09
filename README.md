@@ -294,6 +294,7 @@ RETURN n, m
 LIMIT 5
 ~~~
 > ![Ilustração da Consulta 1](assets/images/Exemplo_1.png)
+
 Carregando a Crop_Group_Description
 ~~~cypher
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/DaviGabrielBC/DBDCP---Projeto-Final/main/data/processed/fcid/FCID_Cropgroup_Description.csv' AS line
@@ -317,6 +318,7 @@ RETURN i, g
 LIMIT 50
 ~~~
 > ![Ilustração da Consulta 2](assets/images/Exemplo_2.png)
+
 E agora, criamos as arestas que serão o principal foco de nossas análises:
 ligamos 2 ingredientes se eles estão em uma mesma receita, incrementando 
 o peso de tal aresta se encontramos outra receita em comum:
@@ -334,6 +336,7 @@ RETURN i1, i2
 LIMIT 3
 ~~~
 > ![Ilustração da Consulta 3](assets/images/Exemplo_3.png)
+
 Note que escolhemos 2 arestas, uma em cada direção (a -> b) e (b -> a) para
 evitar problemas trazidos por arestas unidirecionais, como no cálculo do grau
 de um vértice.
@@ -433,10 +436,11 @@ de um vértice.
 >     serem consideradas semelhantes porém a consulta não deu nenhum resultado. 
 >     Fomos então diminuindo para 50, depois 25, e por fim 20, que já trouxe um 
 >     resultado expressivo:
+
 >     ![Receitas com mais de 20 ingredientes em comum:](assets/images/weight_20.png)
->     Porém, por ser um resultado bem simples, (19 também) resolvemos destacar
+>   * Porém, por ser um resultado bem simples, (19 também) resolvemos destacar
 >     aqui apenas os casos em que essa quantidade de ingredientes em comum (que no 
->     código trataremos como peso da aresta Sugere) nos quais o peso é > 18 e > 16:
+>     código trataremos como peso da aresta Sugere) nos quais o peso é > 18:
 >     ~~~cypher
 >     MATCH (a1)-[s:Sugere]->(a2)
 >     WHERE s.weight > 18
@@ -444,6 +448,7 @@ de um vértice.
 >     LIMIT 100
 >     ~~~
 >     ![Receitas com mais de 18 ingredientes em comum:](assets/images/weight_18.png)
+>   * E peso > 16:
 >     ~~~cypher
 >     MATCH (a1)-[s:Sugere]->(a2)
 >     WHERE s.weight > 16
@@ -451,7 +456,7 @@ de um vértice.
 >     LIMIT 100
 >     ~~~
 >     ![Receitas com mais de 16 ingredientes em comum:](assets/images/weight_16.png)
->     Podemos notar que todos esses alimentos são derivados de leite, incluindo os vários
+>   * Podemos notar que todos esses alimentos são derivados de leite, incluindo os vários
 >     tipos de "ICE CREAM" que aparecem, de fato, muitas dessas receitas são apenas
 >     sorvete com uma cobertura diferente (um é de chocolate, outro de caramelo por 
 >     exemplo) que certamente atendem ao nosso objetivo de sugerir um alimento com uma
@@ -519,7 +524,7 @@ de um vértice.
 >     RETURN i, j
 >     ~~~
 >     ![Vértices e arestas conectadas aos vértices de maior centralidade de grau](assets/images/score_105.png)
->     Veja como o próprio Neo4j tende a colocálos no centro, pois eles de fato
+>   * Veja como o próprio Neo4j tende a colocálos no centro, pois eles de fato
 >     possuem uma alta centralidade, nesse caso, de grau. Também vale notar
 >     que esses 3 vértices de grau 105 estão conectados uns aos outros (exceto
 >     a si próprios) e a 103 vértices em comum.
@@ -561,8 +566,8 @@ de um vértice.
 >     WHERE i.FCID_Code = gds.util.asNode(nodeId).FCID_Code AND localClusteringCoefficient = 1.0
 >     RETURN i, n
 >     ~~~
->     ![Conexões a partir de clusters](assets/images/clustering_coefficient_1.png)
->     Eu achei esse grafo bem interessante, pois ele não só mostra um "enxame" de vértices
+>   * ![Conexões a partir de clusters](assets/images/clustering_coefficient_1.png)
+>   * Eu achei esse grafo bem interessante, pois ele não só mostra um "enxame" de vértices
 >     que pude verificar que contém todas as 4 comunidades
 >     "Spices, other" - 540
 >     "Cocoa bean, chocolate" - 312
