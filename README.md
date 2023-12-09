@@ -90,13 +90,13 @@ CONTENT(_id_, source_id, _food_id_, orig_food_id, orig_food_id_common_name, orig
   food_id chave estrangeira -> FOOD(id)
 ~~~
 
-> ![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos%20(Slide%201).png)
-![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos%20(Slide%202).png)
-![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos%20(Slide%203).png)
-![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos%20(Slide%204).png)
-![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos%20(Slide%205).png)
-![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos%20(Slide%206).png)
-![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos%20(Slide%207).png)
+> ![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%201).png)
+![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%202).png)
+![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%203).png)
+![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%204).png)
+![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%205).png)
+![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%206).png)
+![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%207).png)
 
 
 
@@ -171,8 +171,11 @@ matches_df.to_csv('bases/relação/food_matches.csv', index=False)
 ~~~
 O algoritmo pode ser dividido em alguns passos:
 > Primeiramente carregamos os conteúdos das tabelas para as quais queremos encontrar textos equivalentes (ou seja, realizar matchs).
+
 > Em seguida, padronizamos todas as letras para serem minúsculas
+
 > Agora criamos o nosso vetor padrão (dicionário) com as palavras que serão comparadas, fazendo o encaixe das strings da outra tabela em forma de vetor
+
 > Encontramos por fim, o vetor de ocorrência na tabela de referência que mais se adequa ao vetor que está sendo comparado da outra tabela, por meio da escolha do maior valor de similaridade de cosseno, já que quanto
 mais próximos 2 vetores num espaço n-dimensional, menor o ângulo entre eles (próximo de 0) e portanto maior o cosseno desse ângulo (próximo de cos(0) = 1), ou seja, basta selecionar o vetor que tem a maior
 cosine_similarity() com o vetor comparado atualmente.
