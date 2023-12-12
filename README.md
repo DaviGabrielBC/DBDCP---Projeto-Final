@@ -5,14 +5,14 @@
 
 
 ## `data`
-Os dados foram extraídos de diretamente dos sites das pesquisas:
+Os dados foram extraídos diretamente dos sites das pesquisas:
 ### External
 
 [What we eat in America FCID ](https://fcid.foodrisk.org/dbc/)
 
 [FoodDB](https://foodb.ca/)
 
-[Food Consunption Data - Europa](https://www.efsa.europa.eu/en/data-report/food-consumption-data)
+[Food Consumption Data - Europa](https://www.efsa.europa.eu/en/data-report/food-consumption-data)
 
 
 ## `notebooks`
@@ -89,8 +89,9 @@ CONTENT(_id_, source_id, _food_id_, orig_food_id, orig_food_id_common_name, orig
   id chave estrangeira -> COMPOUNDS(id)
   food_id chave estrangeira -> FOOD(id)
 ~~~
+> Modelo Lógico de Grafos:
 
-> ![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%201).png)
+![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%201).png)
 ![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%202).png)
 ![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%203).png)
 ![Modelo Lógico de Grafos](assets/Modelo%20Lógico%20de%20Grafos/Modelo%20Lógico%20de%20Grafos%20(Slide%204).png)
@@ -104,10 +105,11 @@ CONTENT(_id_, source_id, _food_id_, orig_food_id, orig_food_id_common_name, orig
 
 título do arquivo/base | link | breve descrição
 ----- | ----- | -----
-`<EFSA_Intake.csv>` | `https://raw.githubusercontent.com/viniguedes29/mc536-DBDCP-Projeto-Final/main/data/processed/efsa/EFSA_Intake.csv` | `<Base de dados de consumo tratada>`
-`<foods_comoddity_matches.csv>` | `https://raw.githubusercontent.com/viniguedes29/mc536-DBDCP-Projeto-Final/main/data/interm/foods_comoddity_matches.csv` | `<Correspondência entre os dados das bases FCID e FooDB>`
-`<EFSA_Food_FoodDB_matches.csv>` | `https://raw.githubusercontent.com/viniguedes29/mc536-DBDCP-Projeto-Final/main/data/interm/EFSA_Food_FoodDB_matches.csv` | `<Correspondência entre os dados das bases EFSA e FooDB>`
-`<EFSA_Food_FoodDB_matches.csv>` |  `https://raw.githubusercontent.com/viniguedes29/mc536-DBDCP-Projeto-Final/main/data/interm/Content_tratado_cropped.csv` | `<Base Content da FooDB tratada>`
+`<EFSA_Intake.csv>` | `https://raw.githubusercontent.com/DaviGabrielBC/DBDCP---Projeto-Final/main/data/processed/efsa/EFSA_Intake.csv` | `<Base de dados de consumo da EFSA tratada>`
+`<FCID_FooDB_matches.csv>` | `https://raw.githubusercontent.com/DaviGabrielBC/DBDCP---Projeto-Final/main/data/interm/FCID_FooDB_matches.csv` | `<Correspondências entre os alimentos das bases FCID e FooDB>`
+`<EFSA_FooDB_matches.csv>` | `https://raw.githubusercontent.com/DaviGabrielBC/DBDCP---Projeto-Final/main/data/interm/EFSA_FooDB_matches.csv` | `<Correspondências entre os alimentos das bases EFSA e FooDB>`
+`<Content_tratado_cropped.csv>` | `https://raw.githubusercontent.com/DaviGabrielBC/DBDCP---Projeto-Final/main/data/interm/Content_tratado_cropped.csv` | `<Base Content da FooDB tratada>`
+`<Content_extra_cropped.csv>` | `https://raw.githubusercontent.com/DaviGabrielBC/DBDCP---Projeto-Final/main/data/interm/Content_extra_cropped.csv` | `<Base Content da FooDB simplificada ainda mais>`
 
 ## Bases de Dados
 > 
@@ -122,13 +124,12 @@ título da base | link | breve descrição
 O conjunto de bases de dados utilizado nas análises é composto de 3 bases de dados: FooDB, que traz informações nutricionais de diversos alimentos, detalhando inclusive suas composições. FCID (Food Commodity Intake
 Database), cujos dados da tabela de consumo foram obtidos por meio de pesquisas endereçadas a consumidores. Essa base também contém informações sobre a composição de diferentes receitas, que trazem uma análise 
 diferente das demais bases, nos permitindo ver como um alimento interage com outros no aspecto culinário. EFSA (European Food Consumption Data), também obtida por meio de pesquisas, mas dessa vez trazendo informações
- sobre os consumidores e o consumo em relação a uma população, ou seja, algumas das tabelas dessa base não levam em conta apenas dados sobre as pessoas que de fato consumiram, mas de todas que foram entrevistadas, 
- fornecendo dados mais robustos que nos permitem inferir hábitos alimentares sobre uma população em geral.
+sobre os consumidores e o consumo em relação a uma população, ou seja, algumas das tabelas dessa base não levam em conta apenas dados sobre as pessoas que de fato consumiram, mas de todas que foram entrevistadas, 
+fornecendo dados mais robustos que nos permitem inferir hábitos alimentares sobre uma população em geral.
 
-Nosso modelo conceitual conecta as 3 bases citadas acima, totalizando 12 tabelas. Essas conexões criam uma integralização entre as bases, que nos permite usar dados de uma base para conseguir informações sobre 
+Nosso modelo conceitual conecta as 3 bases citadas acima, totalizando 12 tabelas. Essas conexões criam uma integração entre as bases, que nos permite usar dados de uma base para conseguir informações sobre 
 consumo ou a formação de receitas detalhadas em outras bases, possibilitando também a comparação do consumo em diferentes lugares. A conexão entre essas bases se dá por meio de uma entidade de relacionamento obtida 
-com o algoritmo em NLP simples, TF-IDF, no qual fizemos a relção do nomes dos comodditys da tabela FCID com as comidas do FoodDB e do FCID que busca uma equivalência entre as descrições dos alimentos de cada par de
-bases, no nosso caso para simplificar só fizemos entre EFSA <-> FCID e FCID <-> FooDB, a relação entre EFSA <-> FooDB é obtida com a base FCID como intermediária.
+com o algoritmo em NLP simples, TF-IDF, encontrando equivalências entre as descrições dos alimentos em cada par de bases, no nosso caso para simplificar só fizemos entre FooDB <-> FCID e FooDB <-> EFSA, a relação entre EFSA <-> FCID é obtida com a base FooDB como intermediária.
 
 Com base no modelo conceitual construímos o modelo relacional, onde cada entidade resultou em uma tabela, semelhantemente, cada atributo se tornou em uma coluna da respectiva tabela, inclusive as entidades 
 intermediárias que realizavam a conexão entre as bases, as quais possuem 2 chaves estrangeiras e primárias, uma de cada base. Elas se tornaram tabelas intermediárias, responsáveis por registrar a equivalência entre 
@@ -246,7 +247,7 @@ todas as outras análises.
 
 Em meio a essas análises, continuávamos sempre analisando o gráfico retornando um conjunto pequeno de vértices (tanto ingredientes quanto receitas, a depender da consulta feita) por meio do LIMIT X. Percebemos 
 facilmente uma espécie de cluster no grafo, principalmente de ingredientes, já que vários deles estavam em uma mesma receita (principalmente as comunidades que encontramos, pois aproximadamente 1/5 dos ingredientes 
-são parte de uma comunidade que contém outros nós fora si próprio) e então buscamos um algoritmo que calcula o coeficiente de clusterização ao redor de cada nó (no nosso caso, cada ingrediente). Encontramos então 3
+são parte de uma comunidade que contém outros nós fora si próprio) e então buscamos um algoritmo que calcula o coeficiente de clusterização ao redor de cada nó (no nosso caso, cada ingrediente). Encontramos então 55
 nós com coeficiente de clusterização 1.0 e retornamos o resultado em forma de PNG que será discutido na seção de perguntas/análise. 
 
 Por sinal, tivemos um grande problema ao aplicar o algoritmo de cálculo da centralidade de grau de cada vértice, pois os vérticies aos quais eles estavam ligados possuiam também uma grande 
@@ -431,12 +432,18 @@ de um vértice.
 >   * A ideia utilizada aqui consiste em analisar alimentos que têm receitas 
 >     que possuem muitos ingredientes em comum, ou seja, são semelhantes e então
 >     se uma pessoa gosta de uma receita, ela provavelmente gostaria da outra. 
+>     ~~~cypher
+>     MATCH (a1 :Alimento)-[b]->(i :Ingrediente)<-[c]-(a2 :Alimento)
+>     MERGE (a1)-[s:Sugere]->(a2)
+>     ON CREATE SET s.weight = 1
+>     ON MATCH SET s.weight = s.weight + 1
+>     ~~~
 >     Como um chute inicial para explorar o comportamento do grafo, configuramos 
 >     que 2 receitas precisariam ter pelo menos 100 ingredientes em comum, para 
 >     serem consideradas semelhantes porém a consulta não deu nenhum resultado. 
 >     Fomos então diminuindo para 50, depois 25, e por fim 20, que já trouxe um 
 >     resultado expressivo:
-
+>     
 >     ![Receitas com mais de 20 ingredientes em comum:](assets/images/weight_20.png)
 >   * Porém, por ser um resultado bem simples, (19 também) resolvemos destacar
 >     aqui apenas os casos em que essa quantidade de ingredientes em comum (que no 
@@ -566,7 +573,7 @@ de um vértice.
 >     WHERE i.FCID_Code = gds.util.asNode(nodeId).FCID_Code AND localClusteringCoefficient = 1.0
 >     RETURN i, n
 >     ~~~
->   * ![Conexões a partir de clusters](assets/images/clustering_coefficient_1.png)
+>     ![Conexões a partir de clusters](assets/images/clustering_coefficient_1.png)
 >   * Eu achei esse grafo bem interessante, pois ele não só mostra um "enxame" de vértices
 >     que pude verificar que contém todas as 4 comunidades
 >     "Spices, other" - 540
